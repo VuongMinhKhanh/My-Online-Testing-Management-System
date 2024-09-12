@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F162A1A-15DB-4F74-85E2-BAC7F2763BBC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuestionBank_GUI</RootNamespace>
+    <AssemblyName>QuestionBank_GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class.cs" />
+    <Compile Include="ClassListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassListForm.Designer.cs">
+      <DependentUpon>ClassListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassSubject.cs" />
+    <Compile Include="Connection.cs" />
+    <Compile Include="CreateScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateScheduleForm.Designer.cs">
+      <DependentUpon>CreateScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditScheduleForm.Designer.cs">
+      <DependentUpon>EditScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage_Admin.Designer.cs">
+      <DependentUpon>HomePage_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage_Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage_Student.Designer.cs">
+      <DependentUpon>HomePage_Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage_Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage_Teacher.Designer.cs">
+      <DependentUpon>HomePage_Teacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_Users.Designer.cs">
+      <DependentUpon>Manage_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionBankForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuestionBankForm.Designer.cs">
+      <DependentUpon>QuestionBankForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopupQuestionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopupQuestionForm.Designer.cs">
+      <DependentUpon>PopupQuestionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schedule.cs" />
+    <Compile Include="ScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleForm.Designer.cs">
+      <DependentUpon>ScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Score.cs" />
+    <Compile Include="ClassManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassManagementForm.Designer.cs">
+      <DependentUpon>ClassManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Semeter.cs" />
+    <Compile Include="Shift.cs" />
+    <Compile Include="StatsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatsForm.Designer.cs">
+      <DependentUpon>StatsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student.cs" />
+    <Compile Include="UserInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoForm.Designer.cs">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentScheduleForm.Designer.cs">
+      <DependentUpon>StudentScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentScoreForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentScoreForm.Designer.cs">
+      <DependentUpon>StudentScoreForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentScoreResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentScoreResult.Designer.cs">
+      <DependentUpon>StudentScoreResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher_Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_Register.Designer.cs">
+      <DependentUpon>Teacher_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToastMessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToastMessageForm.Designer.cs">
+      <DependentUpon>ToastMessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utils.cs" />
+    <EmbeddedResource Include="ClassListForm.resx">
+      <DependentUpon>ClassListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateScheduleForm.resx">
+      <DependentUpon>CreateScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditScheduleForm.resx">
+      <DependentUpon>EditScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage_Admin.resx">
+      <DependentUpon>HomePage_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage_Student.resx">
+      <DependentUpon>HomePage_Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage_Teacher.resx">
+      <DependentUpon>HomePage_Teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Users.resx">
+      <DependentUpon>Manage_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuestionBankForm.resx">
+      <DependentUpon>QuestionBankForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopupQuestionForm.resx">
+      <DependentUpon>PopupQuestionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ScheduleForm.resx">
+      <DependentUpon>ScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassManagementForm.resx">
+      <DependentUpon>ClassManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatsForm.resx">
+      <DependentUpon>StatsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfoForm.resx">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentScheduleForm.resx">
+      <DependentUpon>StudentScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentScoreForm.resx">
+      <DependentUpon>StudentScoreForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentScoreResult.resx">
+      <DependentUpon>StudentScoreResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_Register.resx">
+      <DependentUpon>Teacher_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToastMessageForm.resx">
+      <DependentUpon>ToastMessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuestionBank_BUS\QuestionBank_BUS.csproj">
+      <Project>{072ef61a-5949-45e0-a77a-d7d57bc410ec}</Project>
+      <Name>QuestionBank_BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuestionBank_DTO\QuestionBank_DTO.csproj">
+      <Project>{4ace1823-989c-4076-944f-e2d6185506a7}</Project>
+      <Name>QuestionBank_DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,11 @@
+C:\Users\Khanh\Desktop\Online-Testing-Management-System\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Khanh\Desktop\Online-Testing-Management-System\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Khanh\Desktop\Online-Testing-Management-System\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Khanh\Desktop\Online-Testing-Management-System\WindowsFormsApp1\obj\Debug\OnlineTestingApp.csproj.AssemblyReference.cache
+C:\Users\Khanh\Desktop\Online-Testing-Management-System\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.QuestionBankForm.resources
+C:\Users\Khanh\Desktop\Online-Testing-Management-System\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PopupQuestionForm.resources
+C:\Users\Khanh\Desktop\Online-Testing-Management-System\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Khanh\Desktop\Online-Testing-Management-System\WindowsFormsApp1\obj\Debug\OnlineTestingApp.csproj.GenerateResource.cache
+C:\Users\Khanh\Desktop\Online-Testing-Management-System\WindowsFormsApp1\obj\Debug\OnlineTestingApp.csproj.CoreCompileInputs.cache
+C:\Users\Khanh\Desktop\Online-Testing-Management-System\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Khanh\Desktop\Online-Testing-Management-System\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
