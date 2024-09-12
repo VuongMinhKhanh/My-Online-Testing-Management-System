@@ -57,7 +57,7 @@ The Online Testing Management System is a C# application developed in Visual Stu
    - SQL Server
 
 2. **Database Setup**:
-   - Import the SQL script provided in the `/Database` folder to set up the database schema.
+   - Import the SQL script provided in the `Database_script.sql` file to set up the database schema.
 
 3. **Project Configuration**:
    - Open the solution in Visual Studio.
